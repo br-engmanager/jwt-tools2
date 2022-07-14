@@ -26,17 +26,8 @@ jobs:
           java-version: '8'
           distribution: 'adopt'
           server-id: github
-          server-username: GITHUB_USER_REF  # env variable name for username
-          server-password: GITHUB_TOKEN_REF          
       
-      - run: mvn --batch-mode --update-snapshots verify
-      - run: echo username
-      - run: echo ${{ secrets.GIT_USERNAME }}
-      
-      - run: mkdir staging && cp target/*.jar staging
-      
-      - name: Build with Maven.
-        run: mvn clean package -DattachMuleSources -Pgithub deploy
+      - name: Publish package
+        run: mvn --batch-mode deploy
         env:
-          GITHUB_USER_REF: ${{ secrets.GIT_USERNAME }}
-          GITHUB_TOKEN_REF: ${{ secrets.GIT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
