@@ -44,7 +44,6 @@ public class RequestTools {
 		final String requestTokenHeader = request.getHeader("Authorization");
 		if (requestTokenHeader != null && requestTokenHeader.startsWith("Bearer ")) {
 			return requestTokenHeader.substring(7).trim();
-
 		} else {
 			final String requestTokenHeaderX = request.getHeader("x-Authorization");
 			if (requestTokenHeaderX != null && requestTokenHeaderX.startsWith("Bearer ")) {
