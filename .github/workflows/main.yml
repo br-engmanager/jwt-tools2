@@ -30,6 +30,8 @@ jobs:
           server-password: GITHUB_TOKEN_REF          
       
       - run: mvn --batch-mode --update-snapshots verify
+      - run: echo username
+      - run: echo ${{ secrets.GIT_USERNAME }}
       
       - run: mkdir staging && cp target/*.jar staging
       
