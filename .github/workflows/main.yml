@@ -26,11 +26,6 @@ jobs:
           java-version: '8'
           distribution: 'adopt'
           server-id: github
-          server-username: GIT_USER
-          server-password: GIT_TOKEN
       
       - name: Publish package
         run: mvn -Pgithub -s $GITHUB_WORKSPACE/.github/workflows/maven-settings.xml --batch-mode deploy 
-        env:
-          GIT_USER: ${{ secrets.GIT_USER }}
-          GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
