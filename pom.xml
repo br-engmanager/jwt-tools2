@@ -25,7 +25,7 @@
 	   <repository>
 	     <id>github</id>
 	     <name>GitHub OWNER Apache Maven Packages</name>
-	     <url>https://maven.pkg.github.com/cleber-ortiz/dependencies</url>
+	     <url>https://maven.pkg.github.com/cleber-ortiz/jwt-tools</url>
 	   </repository>
 	</distributionManagement>
 
@@ -56,15 +56,6 @@
 			<version>0.9.1</version>
 		</dependency>
 	</dependencies>
-
-  <repositories>
-    <repository>
-      <id>dependencies</id>
-      <name>your custom repo</name>
-      <url>https://maven.pkg.github.com/cleber-ortiz/dependencies</url>
-    </repository>
-  </repositories>
-
 
     <build>
         <finalName>jwt-tools</finalName>
