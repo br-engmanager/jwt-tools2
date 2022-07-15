@@ -1,4 +1,4 @@
-package br.com.tijo.api.jwttools;
+package br.com.engmanager.api.jwttools;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

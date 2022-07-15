@@ -1,4 +1,4 @@
-package br.com.tijo.api.jwttools;
+package br.com.engmanager.api.jwttools;
 
 import java.nio.charset.Charset;
 import java.util.Base64;
