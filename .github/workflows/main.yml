@@ -29,3 +29,5 @@ jobs:
       
       - name: Publish package
         run: mvn -Pgithub -s $GITHUB_WORKSPACE/.github/workflows/maven-settings.xml --batch-mode deploy 
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
