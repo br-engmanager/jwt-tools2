@@ -9,7 +9,6 @@
 	<name>jwt-tools</name>
 	<description>jwt-tools</description>
 
-
 	<properties>
 		<jdk.version>1.8</jdk.version>
 		<spring.boot.version>2.1.0.RELEASE</spring.boot.version>
@@ -23,12 +22,12 @@
 
 	<distributionManagement>
 	   <repository>
-	     <id>jwttools</id>
+	     <id>github</id>
 	     <name>GitHub OWNER Apache Maven Packages</name>
 	     <url>https://maven.pkg.github.com/cleber-ortiz/jwt-tools</url>
 	   </repository>
 	</distributionManagement>
-
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -56,16 +55,6 @@
 			<version>0.9.1</version>
 		</dependency>
 	</dependencies>
-
-  <repositories>
-    <repository>
-      <id>jwttools</id>
-      <name>jwt-tools</name>
-      <url>https://maven.pkg.github.com/cleber-ortiz/jwt-tools</url>
-    </repository>
-  </repositories>
-
-
 
     <build>
         <finalName>jwt-tools</finalName>
