@@ -31,13 +31,25 @@
     <servers>
         <server>
             <id>github</id>
-            <username>cleber-ortiz</username>
-           <password>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</password>
+        	<configuration>
+		        <httpHeaders>
+		          <property>
+		            <name>Authorization</name>
+		            <value>Bearer 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</value>
+		          </property>
+		        </httpHeaders>
+		      </configuration>
         </server>
         <server>
             <id>dependencies</id>
-            <username>cleber-ortiz</username>
-           <password>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</password>
+        	<configuration>
+		        <httpHeaders>
+		          <property>
+		            <name>Authorization</name>
+		            <value>Bearer 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</value>
+		          </property>
+		        </httpHeaders>
+		      </configuration>
         </server>
        
     </servers>
