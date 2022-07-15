@@ -31,13 +31,13 @@
     <servers>
         <server>
             <id>github</id>
-            <username>${env.GIT_USER}</username>
-           <password>${env.GIT_TOKEN}</password>
+            <username>cleber-ortiz</username>
+           <password>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</password>
         </server>
         <server>
             <id>dependencies</id>
-            <username>${env.GIT_USER}</username>
-           <password>${env.GIT_TOKEN}</password>
+            <username>cleber-ortiz</username>
+           <password>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</password>
         </server>
        
     </servers>
