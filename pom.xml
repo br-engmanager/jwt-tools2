@@ -23,9 +23,9 @@
 
 	<distributionManagement>
 	   <repository>
-	     <id>github</id>
+	     <id>jwttools</id>
 	     <name>GitHub OWNER Apache Maven Packages</name>
-	     <url>https://maven.pkg.github.com/cleber-ortiz/dependencies</url>
+	     <url>https://maven.pkg.github.com/cleber-ortiz/jwt-tools</url>
 	   </repository>
 	</distributionManagement>
 
@@ -59,7 +59,7 @@
 
   <repositories>
     <repository>
-      <id>jwt-tools</id>
+      <id>jwttools</id>
       <name>jwt-tools</name>
       <url>https://maven.pkg.github.com/cleber-ortiz/jwt-tools</url>
     </repository>

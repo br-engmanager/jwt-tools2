@@ -14,8 +14,8 @@
                     <url>https://repo1.maven.org/maven2</url>
                 </repository>
                 <repository>
-                    <id>dependencies</id>
-                    <url>https://maven.pkg.github.com/cleber-ortiz/dependencies</url>
+                    <id>jwttools</id>
+                    <url>https://maven.pkg.github.com/cleber-ortiz/jwt-tools</url>
                     <snapshots>
                         <enabled>true</enabled>
                     </snapshots>
@@ -31,25 +31,13 @@
     <servers>
         <server>
             <id>github</id>
-        	<configuration>
-		        <httpHeaders>
-		          <property>
-		            <name>Authorization</name>
-		            <value>Bearer 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</value>
-		          </property>
-		        </httpHeaders>
-		      </configuration>
+            <username>${env.GIT_USER}</username>
+           <password>${env.GIT_TOKEN}</password>
         </server>
         <server>
-            <id>dependencies</id>
-        	<configuration>
-		        <httpHeaders>
-		          <property>
-		            <name>Authorization</name>
-		            <value>Bearer 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</value>
-		          </property>
-		        </httpHeaders>
-		      </configuration>
+            <id>jwttools</id>
+            <username>${env.GIT_USER}</username>
+           <password>${env.GIT_TOKEN}</password>
         </server>
        
     </servers>
