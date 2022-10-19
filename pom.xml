@@ -4,10 +4,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.com.engmanager</groupId>
-	<artifactId>jwt-tools</artifactId>
+	<artifactId>jwt-tools2</artifactId>
 	<version>1.1.2</version>
-	<name>jwt-tools</name>
-	<description>jwt-tools</description>
+	<name>jwt-tools2</name>
+	<description>jwt-tools2</description>
 
 	<properties>
 		<jdk.version>1.8</jdk.version>
@@ -57,7 +57,7 @@
 	</dependencies>
 
     <build>
-        <finalName>jwt-tools</finalName>
+        <finalName>jwt-tools2</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
